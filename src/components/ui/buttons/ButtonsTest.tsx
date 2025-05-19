@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
 
-
 const buttonVariants = {
     outline: "bg-transparent text-white border-2 border-white hover:bg-white/10",
     purple: "bg-primary-600 border-primary-500",
