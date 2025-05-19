@@ -102,8 +102,8 @@
   /* 120px / 16 */
 
   /* fonts */
-  --type-font-family-heading: "Poppins";
-  --type-font-family-body: "Inter";
+  --type-font-family-heading: 'Poppins', sans-serif;
+  --type-font-family-body: 'Inter', sans-serif;
   --type-font-weight-light: light;
   --type-font-weight-regular: 400;
   --type-font-weight-medium: 500;
@@ -278,6 +278,16 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: var(--type-font-family-body);
+  font-weight: var(--type-font-weight-medium);
+  font-size: var(--fontsize-body-md);
+  background: linear-gradient(0deg, rgba(8, 15, 40, 0.5), rgba(8, 15, 40, 0.5)), linear-gradient(115.6deg, #080F28 0%, #221F75 100%);
+  color: var(--text-body);
+  line-height: var(--line-height-body-md);
   height: 100%;
 }
 

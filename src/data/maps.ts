@@ -1,10 +1,8 @@
 export interface GameMap {
     id: number;        
     name: string;      
-    image: {
-        icon: string;
-        thumbnail?: string;
-    }    
+    icon: string;
+    image?:string
     link?: string;      
     active?: boolean;  
   }
@@ -13,71 +11,57 @@ export interface GameMap {
   export const maps: GameMap[] = [
     {
         id: 1,
-        name: 'mirage',
-        image: {
-            icon: '/assets/mapIcons/mirageIcon.webp',
-            thumbnail: '/assets/mapImages/mirage.webp'
-        },
+        name: 'Mirage',
+        icon: '/assets/mapIcons/mirageIcon.webp',
+        image: '/assets/mapImages/mirage.webp',
         link: '',
         active: true
     },
     {
         id: 2,
-        name: 'ancient',
-        image: {
-            icon: '/assets/mapIcons/ancientIcon.webp',
-            thumbnail: '/assets/mapImages/ancient.webp'
-        },
+        name: 'Ancient',
+        icon: '/assets/mapIcons/ancientIcon.webp',
+        image: '/assets/mapImages/ancient.webp',
         link: '',
         active: true
     },
     {
         id: 3,
-        name: 'nuke',
-        image: {
-            icon: '/assets/mapIcons/nukeIcon.webp',
-            thumbnail: '/assets/mapImages/nuke.webp'
-        },
+        name: 'Nuke',
+        icon: '/assets/mapIcons/nukeIcon.webp',
+        image: '/assets/mapImages/nuke.webp',
         link: '',
         active: true
     },
     {
         id: 4,
-        name: 'inferno',
-        image: {
-            icon: '/assets/mapIcons/infernoIcon.webp',
-            thumbnail: '/assets/mapImages/inferno.webp'
-        },
+        name: 'Inferno',
+        icon: '/assets/mapIcons/infernoIcon.webp',
+        image:  '/assets/mapImages/inferno.webp',
         link: '',
         active: true
     },
     {
         id: 5,
-        name: 'train',
-        image: {
-            icon: '/assets/mapIcons/trainIcon.webp',
-            thumbnail: '/assets/mapImages/train.webp'
-        },
+        name: 'Train',
+        icon: '/assets/mapIcons/trainIcon.webp',
+        image: '/assets/mapImages/train.webp',
         link: '',
         active: true
     },
     {
         id: 6,
-        name: 'dustII',
-        image: {
-            icon: '/assets/mapIcons/dustIIIcon.webp',
-            thumbnail: '/assets/mapImages/dustII.webp'
-        },
+        name: 'DustII',
+        icon:  '/assets/mapIcons/dust2Icon.webp',
+        image:  '/assets/mapImages/dust2.webp',
         link: '',
         active: true
     },
     {
         id: 7,
-        name: 'anubis',
-        image: {
-            icon: '/assets/mapIcons/anubisIcon.webp',
-            thumbnail: '/assets/mapImages/anubis.webp'
-        },
+        name: 'Anubis',
+        icon: '/assets/mapIcons/anubisIcon.webp',
+        image:  '/assets/mapImages/anubis.webp',
         link: '',
         active: true
     }
