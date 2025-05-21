@@ -1,4 +1,5 @@
 import './globals.css';
+import Footer from '@/components/layout/footer/Footer';
 import Header from '@/components/layout/Header';
 
 export default function RootLayout({
@@ -11,7 +12,8 @@ export default function RootLayout({
       <body>
         <Header />
         <main>{children}</main>
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }

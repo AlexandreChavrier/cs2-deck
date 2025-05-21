@@ -53,53 +53,29 @@
   /* scales / sizing */
   --scale-0: 0rem;
   --scale-25: 0.0625rem;
-  /* 1px / 16 */
   --scale-50: 0.125rem;
-  /* 2px / 16 */
   --scale-100: 0.25rem;
-  /* 4px / 16 */
   --scale-150: 0.375rem;
-  /* 6px / 16 */
   --scale-200: 0.5rem;
-  /* 8px / 16 */
   --scale-300: 0.75rem;
-  /* 12px / 16 */
   --scale-400: 1rem;
-  /* 16px / 16 */
   --scale-500: 1.25rem;
-  /* 20px / 16 */
   --scale-600: 1.5rem;
-  /* 24px / 16 */
   --scale-700: 1.75rem;
-  /* 28px / 16 */
   --scale-800: 2rem;
-  /* 32px / 16 */
   --scale-900: 2.25rem;
-  /* 36px / 16 */
   --scale-1000: 2.5rem;
-  /* 40px / 16 */
   --scale-1100: 2.75rem;
-  /* 44px / 16 */
   --scale-1200: 3rem;
-  /* 48px / 16 */
   --scale-1300: 3.25rem;
-  /* 52px / 16 */
   --scale-1400: 3.5rem;
-  /* 56px / 16 */
   --scale-1500: 3.75rem;
-  /* 60px / 16 */
   --scale-1600: 4rem;
-  /* 64px / 16 */
   --scale-1700: 4.25rem;
-  /* 68px / 16 */
   --scale-1800: 4.5rem;
-  /* 72px / 16 */
   --scale-1900: 4.75rem;
-  /* 76px / 16 */
   --scale-2000: 5rem;
-  /* 80px / 16 */
   --scale-3000: 7.5rem;
-  /* 120px / 16 */
 
   /* fonts */
   --type-font-family-heading: 'Poppins', sans-serif;
@@ -194,13 +170,9 @@
   --text-action-hover: var(--secondary-default);
   --text-disabled: var(--neutral-500);
 
-  /* responsive - Mode 1 */
   --fontsize-body-xs: 0.75rem;
-  /* 12px / 16 */
   --line-height-body-xs: 1.125rem;
-  /* 18px / 16 */
   --paragraph-spacing-body-xs: 0.875rem;
-  /* 14px / 16 */
   --sizing-3xs: var(--scale-300);
   --sizing-2xs: var(--scale-400);
   --sizing-xs: var(--scale-600);
@@ -220,59 +192,32 @@
   --spacing-2xl: var(--scale-1200);
   --spacing-3xl: var(--scale-3000);
   --paragraph-spacing-body-sm: 1rem;
-  /* 16px / 16 */
   --paragraph-spacing-body-md: 1rem;
-  /* 16px / 16 */
   --paragraph-spacing-body-lg: 1.25rem;
-  /* 20px / 16 */
   --line-height-heading-h6: 1.75rem;
-  /* 28px / 16 */
   --line-height-heading-h5: 2.25rem;
-  /* 36px / 16 */
   --line-height-heading-h4: 3rem;
-  /* 48px / 16 */
   --line-height-heading-h3: 3.5rem;
-  /* 56px / 16 */
   --line-height-heading-h2: 4rem;
-  /* 64px / 16 */
   --line-height-heading-h1: 5rem;
-  /* 80px / 16 */
   --line-height-body-sm: 1.25rem;
-  /* 20px / 16 */
   --line-height-body-md: 1.5rem;
-  /* 24px / 16 */
   --line-height-body-lg: 2rem;
-  /* 32px / 16 */
   --fontsize-body-sm: 0.875rem;
-  /* 14px / 16 */
   --fontsize-body-md: 1rem;
-  /* 16px / 16 */
   --fontsize-body-lg: 1.25rem;
-  /* 20px / 16 */
   --fontsize-heading-h6: 1.25rem;
-  /* 20px / 16 */
   --fontsize-heading-h5: 1.5rem;
-  /* 24px / 16 */
   --fontsize-heading-h4: 2rem;
-  /* 32px / 16 */
   --fontsize-heading-h3: 2.5rem;
-  /* 40px / 16 */
   --fontsize-heading-h2: 3rem;
-  /* 48px / 16 */
   --fontsize-heading-h1: 3.75rem;
-  /* 60px / 16 */
   --paragraph-spacing-heading-h6: 1.5rem;
-  /* 24px / 16 */
   --paragraph-spacing-heading-h5: 1.75rem;
-  /* 28px / 16 */
   --paragraph-spacing-heading-h4: 2rem;
-  /* 32px / 16 */
   --paragraph-spacing-heading-h3: 2.25rem;
-  /* 36px / 16 */
   --paragraph-spacing-heading-h2: 2.5rem;
-  /* 40px / 16 */
   --paragraph-spacing-heading-h1: 3rem;
-  /* 48px / 16 */
 }
 
 
@@ -289,5 +234,62 @@ body {
   color: var(--text-body);
   line-height: var(--line-height-body-md);
   height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-headings);
+    font-weight: var(--type-font-weight-semibold);
+    font-family: var(--type-font-family-heading);
+}
+
+p {
+    font-size: var(--fontsize-body-md);
+    color: var(--text-body);
+    font-family: var(--type-font-family-body);
+    font-weight: var(--type-font-weight-regular);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Typographie */
+h1 {
+    font-size: var(--fontsize-heading-h1);
+    /* paragraph-spacing: var(paragraph-spacing-heading-h1); */
+    line-height: var(--line-height-heading-h1);
+}
+
+h2 {
+    font-size: var(--fontsize-heading-h2);
+    /* paragraph-spacing: var(paragraph-spacing-heading-h2); */
+    line-height: var(--line-height-heading-h2);
+
+}
+
+h3 {
+    font-size: var(--fontsize-heading-h3);
+    /* paragraph-spacing: var(paragraph-spacing-heading-h3); */
+    line-height: var(--line-height-heading-h3);
+}
+
+h4 {
+    font-size: var(--fontsize-heading-h4);
+    /* paragraph-spacing: var(paragraph-spacing-heading-h4); */
+    line-height: var(--line-height-heading-h4);
+}
+
+h5 {
+    font-size: var(--fontsize-heading-h5);
+    /* paragraph-spacing: var(paragraph-spacing-heading-h5); */
+    line-height: var(--line-height-heading-h5);
+}
+
+h6 {
+    font-size: var(--fontsize-heading-h6);
+    /* paragraph-spacing: var(paragraph-spacing-heading-h6); */
+    line-height: var(--line-height-heading-h6);
 }
 
